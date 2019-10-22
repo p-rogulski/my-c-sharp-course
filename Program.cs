@@ -19,6 +19,7 @@ namespace Test
             knowlage.RegisterLesson(CSharpTraining.lesson7.WorkWithDelegate.Instance);
             knowlage.RegisterLesson(CSharpTraining.lesson8.Event.Instance);
             knowlage.RegisterLesson(CSharpTraining.lesson9.Tuple.Instance);
+            knowlage.RegisterLesson(CSharpTraining.lesson10.OperatorOverloading.Instance);
 
             //Show lesson Result
             knowlage.PrintResult(CSharpTraining.lesson1.Inheritence.Instance.Key);
@@ -30,6 +31,7 @@ namespace Test
             knowlage.PrintResult(CSharpTraining.lesson7.WorkWithDelegate.Instance.Key);
             knowlage.PrintResult(CSharpTraining.lesson8.Event.Instance.Key);
             knowlage.PrintResult(CSharpTraining.lesson9.Tuple.Instance.Key);
+            knowlage.PrintResult(CSharpTraining.lesson10.OperatorOverloading.Instance.Key);
         }
     }
 }
