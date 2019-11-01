@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace CSharpTraining
 {
-    public class Knowlage
+    public class Knowledge
     {
         private Dictionary<string,ILesson> _lessons;
-        private static Knowlage _instance;
+        private static Knowledge _instance;
         private IOutput _output;
-        private Knowlage()
+        private Knowledge()
         {
             _lessons = new Dictionary<string,ILesson>();
         }
@@ -18,13 +18,13 @@ namespace CSharpTraining
             _output = output;
         }
 
-        public static Knowlage Instance
+        public static Knowledge Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = new Knowlage();
+                    _instance = new Knowledge();
                 }
                 return _instance;
             }
